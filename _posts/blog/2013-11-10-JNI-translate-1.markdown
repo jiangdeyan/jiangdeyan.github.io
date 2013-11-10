@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      JNI官方文档翻译
+title:      JNI官方文档翻译1
 category: blog
 description: 英语小菜，尝试翻译一下。
 ---
