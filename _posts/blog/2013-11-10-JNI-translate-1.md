@@ -5,9 +5,11 @@ category: blog
 description: 英语小菜，尝试翻译一下。
 ---
 
-#介绍 
+#介绍
+ 
 [原文地址][1]
 ------
+
 #第一章
 
 本章介绍Java Native Interface（JNI）。JNI是一种本地编程接口。它允许运行在Java虚拟机（JVM）中的Java代码与其他编程语言比如C、C++、汇编等编写的库或者应用进行交互操作。
