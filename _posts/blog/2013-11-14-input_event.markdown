@@ -15,6 +15,12 @@ struct input_event {
          __u16 code;
          __s32 value;
 };
+```
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
 ``` 
 在Android中，标志性的type中有EV_KEY，EV_REL，EV_ABS。  
 
