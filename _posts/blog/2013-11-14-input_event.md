@@ -17,7 +17,6 @@ description:
          __s32 value;
     };
 ```
-
 在Android中，标志性的type中有EV_KEY，EV_REL，EV_ABS。  
 
 各种KEY事件是EV_KEY。Sensor的事件是EV_REL。Touch事件是EV_ABS。  
