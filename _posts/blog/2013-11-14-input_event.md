@@ -7,8 +7,9 @@ description:
 
 ##Linux input_event struct
 
-定义在Linux/include/uapi/linux/input.h  
-```
+定义在Linux/include/uapi/linux/input.h 
+ 
+```c
     struct input_event {
          struct timeval time; 
          __u16 type;
@@ -16,6 +17,7 @@ description:
          __s32 value;
     };
 ```
+
 在Android中，标志性的type中有EV_KEY，EV_REL，EV_ABS。  
 
 各种KEY事件是EV_KEY。Sensor的事件是EV_REL。Touch事件是EV_ABS。  
