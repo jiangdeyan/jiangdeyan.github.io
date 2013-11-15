@@ -32,10 +32,10 @@ printf("%04x %04x %08x", event.type, event.code, event.value);
 
 getevent -l 可以将type和code转换成对应的信息。  
 
-
-    // The class definition for Account
-    class Account {
-        public:
+```java
+// The class definition for Account
+class Account {
+     public:
             // Constructor
             Account();
             // Set the profit member to a new value
@@ -43,7 +43,7 @@ getevent -l 可以将type和code转换成对应的信息。
             // Return the profit from this Account
             double GetProfit();
     };
-
+```
 
 
 
