@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Linux（Android） input_event结构体
-category: blog
+category: cheatsheet
 description: 
 ---
 
