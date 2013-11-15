@@ -5,7 +5,7 @@ category: blog
 description: 
 ---
 
-#Linux input_event struct
+##Linux input_event struct
 
 定义在Linux/include/uapi/linux/input.h  
 ```
@@ -17,9 +17,11 @@ description:
  };
 ```  
 在Android中，标志性的type中有EV_KEY，EV_REL，EV_ABS。  
+
 各种KEY事件是EV_KEY。Sensor的事件是EV_REL。Touch事件是EV_ABS。  
 EV_KEY中CODE表示何种KEY，value=0表示抬起，value=1表示按下。  
 EV_ABS中CODE表示哪个轴，value表示数值。  
+
 在Android中可以使用getevent获取input_event事件的值，其输出形式为：  
 ```
 printf("%04x %04x %08x", event.type, event.code, event.value);
