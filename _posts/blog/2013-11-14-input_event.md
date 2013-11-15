@@ -23,8 +23,9 @@ description:
 EV_KEY中CODE表示何种KEY，value=0表示抬起，value=1表示按下。  
 EV_ABS中CODE表示哪个轴，value表示数值。  
 
-在Android中可以使用getevent获取input_event事件的值，其输出形式为：  
-```javascript
+在Android中可以使用getevent获取input_event事件的值，其输出形式为：
+ 
+```c
 printf("%04x %04x %08x", event.type, event.code, event.value);
 ```
 参考[Android 中input event的分析][1]  
