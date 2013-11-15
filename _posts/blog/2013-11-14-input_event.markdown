@@ -16,6 +16,20 @@ description:
          __s32 value;
     };
 
+
+
+    // The class definition for Account
+    class Account {
+        public:
+            // Constructor
+            Account();
+            // Set the profit member to a new value
+            void SetProfit(double profit);
+            // Return the profit from this Account
+            double GetProfit();
+    };
+
+
 在Android中，标志性的type中有EV_KEY，EV_REL，EV_ABS。  
 
 各种KEY事件是EV_KEY。Sensor的事件是EV_REL。Touch事件是EV_ABS。  
