@@ -5,9 +5,7 @@ category: cheatsheet
 description: 
 ---
 
-##Linux input_event struct
-
-定义在Linux/include/uapi/linux/input.h 
+Linux input_event struct定义在Linux/include/uapi/linux/input.h 
  
 ```c
     struct input_event {
