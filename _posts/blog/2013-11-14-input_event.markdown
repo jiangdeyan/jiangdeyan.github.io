@@ -8,7 +8,7 @@ description:
 ##Linux input_event struct
 
 定义在Linux/include/uapi/linux/input.h  
-```
+```C
  struct input_event {
          struct timeval time; 
          __u16 type;
