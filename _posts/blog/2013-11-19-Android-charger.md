@@ -71,6 +71,7 @@ void res_free_surface(gr_surface surface);       /* 釋放資源數據 */
 
 ev系列函数  
 这些函数主要是通过input的fd，获取input_event输入，具体实现都定义在bootable/recovery/minui/events.c中。
+
 ```c
 /*
  *初始化pollfd数组 ev_fds
