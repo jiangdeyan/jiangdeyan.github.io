@@ -267,7 +267,7 @@ static int set_key_callback(int code, int value, void * data)
 }
 ```
 
-set_key_callback can be called by two functions. One is ev_sync_key_state, the other is update_input_states.
+`set_key_callback` can be called by two functions. One is `ev_sync_key_state`, the other is `update_input_states`.
 
 Then, the loop function.
 
