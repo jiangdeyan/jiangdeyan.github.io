@@ -1,4 +1,10 @@
-#Android 4.2.2 关于关机闹钟——charger.c分析
+---
+layout:     post
+title:      Android 4.2.2 关于关机闹钟——charger.c分析
+category: blog
+description: android 关机闹钟相关
+---
+
 
 网上已经有一些资料了。
 本文参考  
