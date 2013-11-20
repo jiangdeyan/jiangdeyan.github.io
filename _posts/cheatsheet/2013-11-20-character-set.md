@@ -1,4 +1,4 @@
----
+﻿---
 layout:     post
 title:     字符集简单知识 
 category: cheatsheet
@@ -21,7 +21,7 @@ GBK是GB2312的扩展，同样兼容ASCII，但不是国家强制标准，是业
 
 Unicode=宽字节，可以使用2个字节（UCS-2）或者4个字节（UCS-4），一般用wchar_t表示（具体长度编译器相关）。Unicode的编码虽然可以字符集很全，但是字符编码较长，而且如果有些字节是0的话，与字符串的结束符'\0'冲突(UCS-4)。因此Unicode的传输方式是Unicode转换格式（UTF），最常用的应该是UTF-8了。
 
-UTF-8兼容ASCII，根据编码的不同，长度也不同，当第一个字节开头是0XXX XXXX时，与ASCII相同，只用一个字节表示。当第一个字节是110X XXXX时，用两个字节表示，110X XXXX 10XX XXXX，依次类推。优点很明显，缺点就是变长编码，长度不能控制，相比GBK来说，存储大量很汉字的时候占用很多空间。
+UTF-8兼容ASCII，根据编码的不同，长度也不同，当第一个字节开头是0XXX XXXX时，与ASCII相同，只用一个字节表示。当第一个字节是110X XXXX时，用两个字节表示，110X XXXX 10XX XXXX，依次类推。优点很明显，缺点就是变长编码，长度不能控制，相比GBK来说，一个汉字基本要占用三个字节，在存储大量汉字的时候占用很多空间。
 
 BOM（byte order mark）是为 UTF-16 和 UTF-32 准备的，用于标记字节序（byte order）。例如“奎”的Unicode编码是594E，“乙”的Unicode编码是4E59。如果我们收到UTF-16字节流“594E”，那么这是“奎”还是“乙”？通常使用"零宽度非换行空格"（ZERO WIDTH NO-BREAK SPACE），分为Big endian和 Little endian。UTF-8的字节顺序是不变的，因此行业标准不需要BOM，但是微软为了区分UTF-8和ANSI，也在开头加入了BOM（编码为EF BB BF），也导致了BOM污染的问题。最简单的例子就是“记事本输入联通”了。
 
