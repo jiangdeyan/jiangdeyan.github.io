@@ -1,4 +1,4 @@
-﻿---
+---
 layout:     post
 title:     字符集简单知识 
 category: cheatsheet
