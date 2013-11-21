@@ -2,7 +2,7 @@
 layout: home
 ---
 
-<div class="index-content cheatsheet">
+<div class="index-content c'est la vie">
     <div class="section">
         <ul class="artical-cate">
             <li><a href="/"><span>Blog</span></a></li>
