@@ -6,8 +6,8 @@ layout: home
     <div class="section">
         <ul class="artical-cate">
             <li><a href="/"><span>Blog</span></a></li>
-            <li class="on" style="text-align:center"><a href="/cheatsheet"><span>Cheatsheet</span></a></li>
-            <li style="text-align:right"><a href="/cest_la_vie"><span>Cest_la_vie</span></a></li>
+            <li style="text-align:center"><a href="/cheatsheet"><span>Cheatsheet</span></a></li>
+            <li class="on" style="text-align:right"><a href="/cest_la_vie"><span>Cest_la_vie</span></a></li>
         </ul>
 
         <div class="cate-bar"><span id="cateBar"></span></div>
