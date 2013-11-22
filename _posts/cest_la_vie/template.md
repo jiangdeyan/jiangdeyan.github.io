@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 
-category: c'est la vie
+category: cest_la_vie
 description: 
 ---
 
