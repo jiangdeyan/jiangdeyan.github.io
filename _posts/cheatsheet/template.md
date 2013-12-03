@@ -1,6 +1,6 @@
 ---
-layout: cheatsheet
+layout: post
 title: 
-category: blog
+category: cheatsheet
 description: 
 ---

@@ -1,7 +1,7 @@
 ---
-layout: cheatsheet
+layout: post
 title: JMM & synchronized概述
-category: blog
+category: cheatsheet
 description: JAVA多线程知识点
 ---
 
