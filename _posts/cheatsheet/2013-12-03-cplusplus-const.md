@@ -21,9 +21,9 @@ int main(int argc, char* argv[])
 return 0;
 }
 ```
-gcc
-```
-output:
+gcc output:
+
+```c
 0x7fff136880dc
 0x7fff136880dc 
 1
@@ -46,9 +46,9 @@ int main(int argc, char* argv[])
         return 0;
 }
 ```
-g++
+g++ output:
+
 ```
-output:
 0x7fff5c89d53c
 0x7fff5c89d53c
 0
