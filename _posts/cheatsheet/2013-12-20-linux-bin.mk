@@ -1,0 +1,50 @@
+---
+layout: post
+title:  Linux ldd, nm, strings等
+category: cheatsheet
+description: 包括gnu binutils的一些命令等
+---
+
+###ldd  
+
+`man ldd`，显示`print shared library dependencies`，即打印该文件依赖的共享库。非binutils命令。  
+例如`ldd /bin/mkdir`，结果如下：
+
+
+```
+	linux-vdso.so.1 =>  (0x00007fff1f9ff000)
+	libselinux.so.1 => /lib/x86_64-linux-gnu/libselinux.so.1 (0x00007f0b3529c000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f0b34edd000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007f0b34cd8000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f0b354cd000)
+
+```
+
+第一列显示的是依赖库的名称。 
+第二列显示的是依赖库在系统中的位置。 
+第三列显示的是调用地址。 
+
+###nm
+
+`man nm`， 显示`list symbols from object files`，即列出目标文件的符号。 
+如果文件是stripped的，可以通过`-D`打印动态符号。  
+`-C`命令可以将低级的符号名转换到用户可识别的符号名。   
+
+###stripped   
+
+通过`file`命令可以查看文件的信息，在信息的最后会标明是否是stripped。 
+strip的过程就是去掉文件中的符号，这个符号包括很多，比如调试符号、编译器产生的信息和非全局符号，这样就会使文件变小。但是会导致难以调试。  
+
+可以通过strip命令进行操作。  
+
+###strings  
+
+`man strings`，显示`print the strings of printable characters in files.`，即打印出文件中可以打印的字符。  
+
+###objdump  
+
+`man objdump`，显示`display information from object files.`，俗称反汇编。  
+
+###addr2line  
+
+`man addr2line`，显示` convert addresses into file names and line numbers.`，即将地址转换到文件名和行数。 执行形式为`addr2line -a [address] -e [file]`。  
